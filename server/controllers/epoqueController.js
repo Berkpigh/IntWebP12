@@ -1,22 +1,22 @@
-const userService = require('../services/userService')
+const epoqueService = require('../services/epoqueService')
 
-module.exports.createUser = async (req, res) => {
+module.exports.addEpoque = async (req, res) => {
   let response = {}
 
   try {
-    const responseFromService = await userService.createUser(req.body)
+    const responseFromService = await epoqueService.addEpoque(req.body)
     response.status = 200
-    response.message = 'User successfully created'
+    response.message = 'Nouvelle epoque cree'
     response.body = responseFromService
   } catch (error) {
-    console.error('Something went wrong in userController.js', error)
+    console.error('Something went wrong in epoqueController.js', error)
     response.status = 400
     response.message = error.message
   }
 
   return res.status(response.status).send(response)
 }
-
+/* 
 module.exports.loginUser = async (req, res) => {
   let response = {}
 
@@ -71,3 +71,4 @@ module.exports.updateUserProfile = async (req, res) => {
 module.exports.signOut = (req, res) => {
   res.clearCookie('access_token').status(200).json('Signout success !')
 }
+ */

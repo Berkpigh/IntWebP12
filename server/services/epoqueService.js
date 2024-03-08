@@ -1,35 +1,31 @@
-const User = require('../database/models/userModel')
-const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+const Epoque = require('../database/models/epoqueModel')
 
-module.exports.createUser = async serviceData => {
+module.exports.addEpoque = async serviceData => {
   console.log(serviceData)
   try {
-    const user = await User.findOne({ email: serviceData.email })
-    if (user) {
-      throw new Error('Email already exists')
+    const epoque = await Epoque.findOne({ email: serviceData.titre })
+    if (epoque) {
+      throw new Error('Epoque deja existante')
     }
 
-    const hashPassword = await bcrypt.hash(serviceData.password, 12)
-
-    const newUser = new User({
-      email: serviceData.email,
-      password: hashPassword,
-      firstName: serviceData.firstName,
-      lastName: serviceData.lastName,
-      userName: serviceData.userName
+    const newEpoque = new Epoque({
+      titre: serviceData.titre,
+      caracteristique: serviceData.caracteristique,
+      vecu: serviceData.vecu,
+      image: serviceData.image,
+      descriptionImage: serviceData.descriptionImage
     })
-  console.log(newUser)
-    let result = await newUser.save()
+  console.log(newEpoque)
+    let result = await newEpoque.save()
 
     return result
   } catch (error) {
-    console.error('Error in userService.js', error)
+    console.error('Error in epoqueService.js', error)
     throw new Error(error)
   }
 }
 
-module.exports.getUserProfile = async serviceData => {
+/* module.exports.getUserProfile = async serviceData => {
   try {
     const jwtToken = serviceData.headers.authorization.split('Bearer')[1].trim()
     const decodedJwtToken = jwt.decode(jwtToken)
@@ -95,3 +91,4 @@ module.exports.updateUserProfile = async serviceData => {
     throw new Error(error)
   }
 }
+ */

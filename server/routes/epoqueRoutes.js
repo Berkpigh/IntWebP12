@@ -1,8 +1,12 @@
 const express = require('express')
 const router = express.Router()
-const userController = require('../controllers/userController')
-const tokenValidation = require('../middleware/tokenValidation')
+const epoqueController = require('../controllers/epoqueController')
+//const tokenValidation = require('../middleware/tokenValidation')
 
+router.post('/epoque', epoqueController.addEpoque)
+
+module.exports = router
+/* 
 router.post('/signup', userController.createUser)
 
 router.post('/login', userController.loginUser)
@@ -20,5 +24,4 @@ router.put(
 )
 
 router.get('/signout', userController.signOut)
-
-module.exports = router
+ */

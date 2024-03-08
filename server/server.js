@@ -1,9 +1,9 @@
 const express = require('express')
 const dotEnv = require('dotenv')
 const cors = require('cors')
-const swaggerUi = require('swagger-ui-express')
-const yaml = require('yamljs')
-const swaggerDocs = yaml.load('./swagger.yaml')
+//const swaggerUi = require('swagger-ui-express')
+//const yaml = require('yamljs')
+//const swaggerDocs = yaml.load('./swagger.yaml')
 const dbConnection = require('./database/connection')
 
 dotEnv.config()
@@ -22,12 +22,12 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Handle custom routes
-app.use('/api/v1/user', require('./routes/userRoutes'))
+app.use('/api/v1', require('./routes/epoqueRoutes'))
 
 // API Documentation
-if (process.env.NODE_ENV !== 'production') {
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
-}
+//if (process.env.NODE_ENV !== 'production') {
+//  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+//}
 
 app.get('/', (req, res, next) => {
   res.send('Hello from my Express server v2!')
