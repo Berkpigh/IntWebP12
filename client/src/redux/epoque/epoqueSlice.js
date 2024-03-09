@@ -11,7 +11,7 @@ const epoqueSlice = createSlice({
   initialState,
   reducers: {
     getepoqueInitial: (state, action) => {
-      state.currentUser = action.payload
+      state.currentEpoque = action.payload
       state.loading = false
       state.error = false
     },
@@ -19,7 +19,7 @@ const epoqueSlice = createSlice({
       state.loading = true
     },
     getepoqueSuccess: (state, action) => {
-      state.currentUser = action.payload
+      state.currentEpoque = action.payload
       state.loading = false
       state.error = false
     },

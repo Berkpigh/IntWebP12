@@ -1,8 +1,22 @@
 import { Link } from 'react-router-dom'
-//import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { useState } from 'react'
+import FetchGetEpoques from '../api/FetchGetEpoques'
 import photobibi from '../assets/img/WIN_20240307_16_16_30_Pro.jpg'
+import { getepoqueStart, getepoqueSuccess } from '../redux/epoque/epoqueSlice'
 
 const Home = () => {
+  const dispatch = useDispatch()
+  const [epoquesToLoad, setEpoquesToLoad] = useState(true)
+  //  const { currentEpoque } = useSelector((state) => state.epoque)
+  const loadEpoques = async () => {
+    dispatch(getepoqueStart())
+    const data = await FetchGetEpoques('epoques')
+    console.log('data : ', data)
+    dispatch(getepoqueSuccess(data))
+    setEpoquesToLoad(false)
+  }
+  if (epoquesToLoad) loadEpoques()
   return (
     <div className="">
       <div className="object-contain h-300px rounded-1.5rem">
@@ -32,8 +46,7 @@ const Home = () => {
           <br /> (pour les jeunes?).
           <br />
           Concernant présent et avenir, j&apos;aimerais exposer ce qui
-          représente un <span className="text-1.2rem font-bold">défi</span> pour
-          moi !
+          représente un <span className="">défi</span> pour moi !
         </p>
       </div>
       <div className="flex flex-col">
