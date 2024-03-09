@@ -5,6 +5,8 @@ const epoqueController = require('../controllers/epoqueController')
 
 router.post('/epoque', epoqueController.addEpoque)
 
+router.get('/epoques', epoqueController.readEpoques)
+
 module.exports = router
 /* 
 router.post('/signup', userController.createUser)
