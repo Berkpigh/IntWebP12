@@ -13,6 +13,7 @@ export default {
       sans: ['Avenir', 'Helvetica', 'Arial', 'sans-serif'],
     },
     fontSize: {
+      '0.75rem': '0.75rem',
       '0.9rem': '0.9rem',
       '1.1rem': '1.1rem',
       '1.2rem': '1.2rem',
@@ -36,6 +37,7 @@ export default {
     width: {
       '80pc': '80%',
       '30px': '30px',
+      '62px': '62px',
       '90px': '90px',
       '100px': '100px',
       '200px': '200px',
