@@ -12,6 +12,7 @@ module.exports.addEpoque = async serviceData => {
       titre: serviceData.titre,
       caracteristique: serviceData.caracteristique,
       vecu: serviceData.vecu,
+      numImage: serviceData.numImage,
       image: serviceData.image,
       descriptionImage: serviceData.descriptionImage
     })

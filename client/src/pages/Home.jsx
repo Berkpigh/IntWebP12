@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { useState } from 'react'
 import FetchGetEpoques from '../api/FetchGetEpoques'
-import photobibi from '../assets/img/WIN_20240307_16_16_30_Pro.jpg'
+import photobibi from '/WIN_20240307_16_16_30_Pro.jpg'
 import { getepoqueStart, getepoqueSuccess } from '../redux/epoque/epoqueSlice'
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
   const loadEpoques = async () => {
     dispatch(getepoqueStart())
     const data = await FetchGetEpoques('epoques')
-    console.log('data : ', data)
+    //console.log('data : ', data)
     dispatch(getepoqueSuccess(data))
     setEpoquesToLoad(false)
   }

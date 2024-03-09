@@ -5,6 +5,7 @@ const epoqueSchema = new mongoose.Schema(
     titre: String,
     caracteristique: String,
     vecu: String,
+    numImage: Number,
     image: String,
     descriptionImage: String
   },

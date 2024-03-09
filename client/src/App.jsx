@@ -3,12 +3,13 @@ import Home from './pages/Home'
 import Passe from './pages/Passe'
 import Present from './pages/Present'
 import Avenir from './pages/Avenir'
+import Header from './components/Header'
 import Footer from './components/Footer'
 
 export default function App() {
   return (
     <BrowserRouter>
-      {/* header */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/passe" element={<Passe />} />
