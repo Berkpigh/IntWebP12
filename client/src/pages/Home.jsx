@@ -4,7 +4,7 @@ import photobibi from '../assets/img/WIN_20240307_16_16_30_Pro.jpg'
 
 const Home = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       <div className="">
         <img src={photobibi} alt="Photo informaticien" />
       </div>
