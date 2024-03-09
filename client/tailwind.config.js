@@ -45,6 +45,8 @@ export default {
       '300px': '300px',
       '320px': '320px',
       '364px': '364px',
+      '412px': '412px',
+      '100pw': '100vw',
     },
     height: {
       '40px': '40px',
@@ -53,10 +55,19 @@ export default {
       '250px': '250px',
       '300px': '300px',
       '400px': '400px',
+      '30ph': '30vh',
+      '915px': '915px',
+      '100ph': '100vh',
     },
     borderWidth: {
       '1px': '1px',
-      10: '10px',
+      '2px': '2px',
+      '10px': '10px',
+    },
+    borderRadius: {
+      '0.25rem': '0.25rem',
+      '1rem': '1rem',
+      '1.5rem': '1.5rem',
     },
     borderColor: {
       green: {
@@ -103,6 +114,11 @@ export default {
     },
     gap: {
       demirem: '0.5rem',
+    },
+    objectFit: {
+      cover: 'cover',
+      contain: 'contain',
+      scaledown: 'scale-down',
     },
     extend: {
       backgroundImage: {

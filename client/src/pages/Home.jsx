@@ -4,9 +4,13 @@ import photobibi from '../assets/img/WIN_20240307_16_16_30_Pro.jpg'
 
 const Home = () => {
   return (
-    <div className="">
-      <div className="">
-        <img src={photobibi} alt="Photo informaticien" />
+    <div className="w-412px h-915px">
+      <div className="object-contain h-300px rounded-1.5rem">
+        <img
+          className="object-contain  rounded-1.5rem"
+          src={photobibi}
+          alt="Photo informaticien"
+        />
       </div>
       <p className="">Portefeuille d&aposinformaticien</p>
       <div className="">

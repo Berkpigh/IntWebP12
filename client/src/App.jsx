@@ -11,9 +11,9 @@ export default function App() {
       {/* header */}
       <Routes>
         <Route path="/" element={<Home />} />
-        {/*         <Route path="/passe" element={<Passe />} />
+        <Route path="/passe" element={<Passe />} />
         <Route path="/present" element={<Present />} />
-        <Route path="/avenir" element={<Avenir />} /> */}
+        <Route path="/avenir" element={<Avenir />} />
       </Routes>
       <Footer />
     </BrowserRouter>
