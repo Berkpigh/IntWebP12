@@ -29,8 +29,9 @@ function Periode({
 }) {
   const imaArray = [ima1, ima2, ima3, ima4, ima5, ima6, ima7, ima8, ima9]
   const nuim = numImage
-  console.log(nuim)
-  const ima = imaArray[nuim]
+  //const ima = imaArray[nuim]
+  const ima = { image }.image
+  console.log(ima)
   return (
     <div>
       <p className="">{titre}</p>

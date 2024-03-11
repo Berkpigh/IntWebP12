@@ -1,0 +1,80 @@
+{
+	"titre": "Fin des années 60, début des années 70",
+	"caracteristique": "L'âge du bit de mémoire visible, de la carte perforée …",
+	"vecu": "J'ai vécu cela en fin de secondaire dans un cours facultatif de FORTRAN. La machine avait appartenu au CERN et je l'ai vue !!!",
+	"numImage": 0,
+	"image": "/1bitMageticCoreMemory.png",
+	"descriptionImage": "Tore de ferrite magnétique: 1 bit de mémoire par tore"
+}
+
+{
+	"titre": "Deuxième partie des années 70 A",
+	"caracteristique": "Le temps des écrans monochromes, l'OS Time Sharing",
+	"vecu": "Il n'y a pas à dire, mais privilégiés étaient ceux qui pouvaient travailler avec des écrans sur un tel système!",
+	"numImage": 1,
+	"image": "/2TimeSharing.png",
+	"descriptionImage": "On ne travaille plus seul dans son coin !"
+}
+
+{
+	"titre": "Deuxième partie des années 70 B",
+	"caracteristique": "Unix débarque. Ses origines sont plus anciennes mais il est réécrit en langage C.",
+	"vecu": "Beaucoup d'inovation émanent du M.I.T. Digital Equipment Corp.(DEC) n'est pas loin avec son siège au Massachusetts",
+	"numImage": 2,
+	"image": "/3features-of-c.png",
+	"descriptionImage": "Pas mal Unix, surtout quand on songe à sa descendance!"
+}
+
+{
+	"titre": "Années 80 A",
+	"caracteristique": "Age d'or des mini-ordinateurs. Le VAX de DEC, processeur 32-bits, OS Virtual Memory System. Les Vax Cluster, technologie de protocole réseau avancée, annoncent internet!",
+	"vecu": "En 3 petites lignes de commande je compile, assemble et execute mes programmes COBOL.",
+	"numImage": 3,
+	"image": "/4thm_IntroToVAXVMS.jpg",
+	"descriptionImage": "Vintage? plutôt révolutionnaire pour l'époque, oui!"
+}
+
+{
+	"titre": "Années 80 B",
+	"caracteristique": "Le PC, puis juse après, le MacIntosh, avec disques durs et CD remplaçant les disquette, s'imposent.",
+	"vecu": "J'ai la chance de pouvoir travailler avec Système de Gestion de Base de Données Relationnel, sur Vax-1178x. Mieux que les fichiers séquentiels indexés.",
+	"numImage": 4,
+	"image": "/5MacIntosh.jpeg",
+	"descriptionImage": "Une souris? Où est le chat? Il regarde par la fenêtre!"
+}
+
+{
+	"titre": "Années 90 A",
+	"caracteristique": "Linux et Windows dominent les OS pour PC.",
+	"vecu": "Au poste de travail, l'écran est peu à peu remplacé par des workstations à interface graphique, puis par des PC.",
+	"numImage": 5,
+	"image": "/6Windows_NT_3.1.png",
+	"descriptionImage": "Il faut de temps en temps rebooter, mais c'est pas mal!"
+}
+
+{
+	"titre": "Années 90 B",
+	"caracteristique": "L'Open Source et l'accès gratuit au développement!",
+	"vecu": "J'ai toujour à faire à d'énormes programmes batch en Cobol, mais je peux me faire des outils en VBA pour m'aider.",
+	"numImage": 6,
+	"image": "/7NexusBrowser.jpeg",
+	"descriptionImage": "Pas d'excuses, développons!"
+}
+
+{
+	"titre": "Années 90 C",
+	"caracteristique": "World Wide Web, protocole HTTP, langage HTML, premier navigateur (Nexus), développement des fournisseurs d'accès à internet",
+	"vecu": "J'utilise la programmation événementielle. Ayant plus d'accès à l'autoformation, je me familiarise avec la Programmation Orientée Objet ",
+	"numImage": 7,
+	"image": "/8SimCity.jpg",
+	"descriptionImage": "Ca c'est pour les enfants (en principe!)"
+}
+
+{
+	"titre": "Dès 2000",
+	"caracteristique": "L'Open Source et l'accès gratuit au développement!",
+	"vecu": "J'ai toujour à faire à d'énormes programmes batch en Cobol, mais je peux me faire des outils en VBA pour m'aider.",
+	"numImage": 8,
+	"image": "/9OpenSource.jpg",
+	"descriptionImage": "Pas d'excuses, développons!"
+}
