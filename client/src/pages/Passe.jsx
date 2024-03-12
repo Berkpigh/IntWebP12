@@ -10,7 +10,6 @@ const Passe = () => {
 
   return (
     <div className="flex flex-col">
-      <p>Hello mon passé</p>
       {ceSorted.map(
         ({
           _id,
