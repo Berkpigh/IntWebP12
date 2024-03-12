@@ -619,12 +619,12 @@ video {
   font-size: 0.75rem;
 }
 
-.text-1\.5rem {
-  font-size: 1.5rem;
-}
-
 .text-0\.9rem {
   font-size: 0.9rem;
+}
+
+.text-1\.5rem {
+  font-size: 1.5rem;
 }
 
 .antialiased {
