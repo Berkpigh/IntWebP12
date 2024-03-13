@@ -1,56 +1,63 @@
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Present = () => {
+  const { currentProjet } = useSelector((state) => state.projet)
+  const cp = { currentProjet }.currentProjet
+  const cpSorted = cp.sort((p1, p2) => p1.numProjet - p2.numProjet)
+  //console.log('cpSorted[0].nom : ', cpSorted[0].nom)
   return (
     <div className="grid grid-cols-2 gap-0.75rem">
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">Premiers pas sur le langage HTML</p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">
-          Créez la page d&apos;accueil d&apos;une agence de voyage avec HTML &
-          CSS
-        </p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">
-          Améliorez l&apos;'interface d&apos;un site mobile avec des animations
-          CSS
-        </p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">Premiers pas sur le langage JavaScript</p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">
-          Créez une page web dynamique avec JavaScript
-        </p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">
-          Planifiez le développement du site de votre client
-        </p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">
-          Créez une application web de location immobilière avec React
-        </p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">
-          Optimisez le référencement d&apos;un site de photographe
-        </p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem">
-        <p className="text-center">
-          Débuggez le site d&apos;une agence d&apos;événementiel
-        </p>
-      </div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 ">
-        <p className="text-center">
-          Implémentez le front-end d&apos;une application bancaire avec React
-        </p>
-      </div>
+      <Link to="/projet/2">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[0].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/3">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[1].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/4">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[2].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/5">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[3].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/6">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[4].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/7">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[5].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/8">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[6].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/9">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[7].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/10">
+        <div className="p-5px border-1px rounded-1.5rem">
+          <p className="text-center">{cpSorted[8].nom}</p>
+        </div>
+      </Link>
+      <Link to="/projet/11">
+        <div className="p-5px border-1px rounded-1.5rem mb-1.5 ">
+          <p className="text-center">{cpSorted[9].nom}</p>
+        </div>
+      </Link>
     </div>
   )
 }

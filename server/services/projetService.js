@@ -3,13 +3,14 @@ const Projet = require('../database/models/projetModel')
 module.exports.addProjet = async serviceData => {
   console.log(serviceData)
   try {
-    const projet = await Projet.findOne({ email: serviceData.titre })
+    const projet = await Projet.findOne({ numProjet: serviceData.numProjet })
     if (projet) {
-      throw new Error('Projet deja existante')
+      throw new Error('Projet deja existant')
     }
 
     const newProjet = new Projet({
       numProjet: serviceData.numProjet,
+      nom: serviceData.nom,
       scenario: serviceData.scenario,
       resultat: serviceData.resultat
     })
@@ -41,6 +42,7 @@ module.exports.updateProjet = async serviceData => {
       { _id: serviceData.body._id },
       {
         numProjet: serviceData.body.numProjet,
+        nom: serviceData.body.nom,
         scenario: serviceData.body.scenario,
         resultat: serviceData.body.resultat
       },

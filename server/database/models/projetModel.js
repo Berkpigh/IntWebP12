@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const projetSchema = new mongoose.Schema(
   {
     numProjet: Number,
+    nom: String,
     scenario: String,
     resultat: String,
   },
