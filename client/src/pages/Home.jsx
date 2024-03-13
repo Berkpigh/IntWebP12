@@ -65,7 +65,9 @@ const Home = () => {
             Avenir
           </Link>
         </div>
-        <p className="my-5">Les poportions sont intentionnellement inversées</p>
+        <p className="my-5 italic">
+          Les poportions sont intentionnellement inversées
+        </p>
       </div>
     </div>
   )

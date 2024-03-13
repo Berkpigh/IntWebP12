@@ -40,6 +40,7 @@ export default {
       '62px': '62px',
       '90px': '90px',
       '100px': '100px',
+      '150px': '150px',
       '200px': '200px',
       '211px': '211px',
       '220px': '220px',
@@ -53,6 +54,7 @@ export default {
     height: {
       '40px': '40px',
       '44px': '44px',
+      '75px': '75px',
       '150px': '150px',
       '250px': '250px',
       '300px': '300px',

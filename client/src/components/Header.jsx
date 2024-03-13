@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className="flex justify-between">
+    <div className="p-5px flex justify-between">
       <p className="text-0.9rem">
         Créez et publiez votre portfolio de développeur
       </p>
