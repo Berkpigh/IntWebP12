@@ -108,6 +108,9 @@ export default {
         '500px': '500px',
       },
     },
+    marginBottom: {
+      '2.5rem': '2.5rem',
+    },
     flex: {
       zero: '0',
       un: '1',
