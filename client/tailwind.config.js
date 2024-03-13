@@ -124,6 +124,7 @@ export default {
     },
     gap: {
       demirem: '0.5rem',
+      '0.75rem': '0.75rem',
     },
     objectFit: {
       cover: 'cover',
