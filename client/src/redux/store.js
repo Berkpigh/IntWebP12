@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import epoqueReducer from './epoque/epoqueSlice.js'
+import projetReducer from './projet/projetSlice.js'
 import { persistReducer, persistStore } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
 const rootReducer = combineReducers({
   epoque: epoqueReducer,
+  projet: projetReducer,
 })
 
 const persistConfig = {

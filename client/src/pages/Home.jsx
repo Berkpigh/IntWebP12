@@ -1,21 +1,34 @@
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import FetchGetEpoques from '../api/FetchGetEpoques'
+import FetchGetProjets from '../api/FetchGetProjets'
 import photobibi from '/WIN_20240307_16_16_30_Pro.jpg'
 import { getepoqueStart, getepoqueSuccess } from '../redux/epoque/epoqueSlice'
+import { getprojetStart, getprojetSuccess } from '../redux/projet/projetSlice'
 
 const Home = () => {
-  const { loaded } = useSelector((state) => state.epoque)
+  const { eloaded } = useSelector((state) => state.epoque)
+  const { ploaded } = useSelector((state) => state.projet)
   const dispatch = useDispatch()
-  //  console.log('loaded : ', { loaded })
+  //  console.log('loaded : ', { eloaded })
   const loadEpoques = async () => {
     dispatch(getepoqueStart())
-    const data = await FetchGetEpoques('epoques')
+    const edata = await FetchGetEpoques('epoques')
     //console.log('data : ', data)
-    dispatch(getepoqueSuccess(data))
+    dispatch(getepoqueSuccess(edata))
   }
-  const loa = { loaded }.loaded
-  !loa ? loadEpoques() : ''
+  const eloa = { eloaded }.eloaded
+  !eloa ? loadEpoques() : ''
+
+  const loadProjets = async () => {
+    dispatch(getprojetStart())
+    const pdata = await FetchGetEpoques('projets')
+    //console.log('data : ', pdata)
+    dispatch(getprojetSuccess(pdata))
+  }
+  const ploa = { ploaded }.ploaded
+  !ploa ? loadProjets() : ''
+
   return (
     <div className="">
       <div className="object-contain h-300px rounded-1.5rem">

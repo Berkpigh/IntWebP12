@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   currentEpoque: null,
-  loaded: false,
+  eloaded: false,
   error: false,
 }
 
@@ -12,19 +12,19 @@ const epoqueSlice = createSlice({
   reducers: {
     getepoqueInitial: (state, action) => {
       state.currentEpoque = action.payload
-      state.loaded = false
+      state.eloaded = false
       state.error = false
     },
     getepoqueStart: (state) => {
-      state.loaded = false
+      state.eloaded = false
     },
     getepoqueSuccess: (state, action) => {
       state.currentEpoque = action.payload
-      state.loaded = true
+      state.eloaded = true
       state.error = false
     },
     getepoqueFailure: (state) => {
-      state.loaded = false
+      state.eloaded = false
       state.error = true
     },
   },

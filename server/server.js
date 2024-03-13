@@ -23,6 +23,7 @@ app.use(express.urlencoded({ extended: true }))
 
 // Handle custom routes
 app.use('/api/v1', require('./routes/epoqueRoutes'))
+app.use('/api/v1', require('./routes/projetRoutes'))
 
 // API Documentation
 //if (process.env.NODE_ENV !== 'production') {
