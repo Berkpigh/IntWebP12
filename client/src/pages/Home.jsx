@@ -1,22 +1,21 @@
 import { Link } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import FetchGetEpoques from '../api/FetchGetEpoques'
 import photobibi from '/WIN_20240307_16_16_30_Pro.jpg'
 import { getepoqueStart, getepoqueSuccess } from '../redux/epoque/epoqueSlice'
 
 const Home = () => {
+  const { loaded } = useSelector((state) => state.epoque)
   const dispatch = useDispatch()
-  const [epoquesToLoad, setEpoquesToLoad] = useState(true)
-  //  const { currentEpoque } = useSelector((state) => state.epoque)
+  //  console.log('loaded : ', { loaded })
   const loadEpoques = async () => {
     dispatch(getepoqueStart())
     const data = await FetchGetEpoques('epoques')
     //console.log('data : ', data)
     dispatch(getepoqueSuccess(data))
-    setEpoquesToLoad(false)
   }
-  if (epoquesToLoad) loadEpoques()
+  const loa = { loaded }.loaded
+  !loa ? loadEpoques() : ''
   return (
     <div className="">
       <div className="object-contain h-300px rounded-1.5rem">
