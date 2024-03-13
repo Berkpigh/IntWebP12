@@ -6,7 +6,7 @@ const Header = () => {
       <p className="text-0.9rem">
         Créez et publiez votre portfolio de développeur
       </p>
-      <Link to="/" className="">
+      <Link to="/" className="pr-5px">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"

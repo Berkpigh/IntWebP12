@@ -31,6 +31,10 @@ export default {
     top: {
       '50px': '50px',
     },
+    left: {
+      '0px': '0px',
+      '20px': '20px',
+    },
     right: {
       '50px': '50px',
     },
@@ -55,6 +59,7 @@ export default {
       '40px': '40px',
       '44px': '44px',
       '75px': '75px',
+      '100px': '100px',
       '150px': '150px',
       '250px': '250px',
       '300px': '300px',
@@ -91,6 +96,7 @@ export default {
       grey: '#D1D5DB',
     },
     padding: {
+      r5px: '5px',
       '5px': '5px',
       '10px': '10px',
       '24px': '24px',
