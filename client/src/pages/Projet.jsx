@@ -8,13 +8,13 @@ const Projet = () => {
   const proj = projects[pnum]
 
   return (
-    <div>
+    <div className="z-0 h-800px bg-projet object-cover bg-cover bg-no-repeat">
       <Link to="/formation">
-        <div className="">
-          <p className="text-center font-bold mb-2.5">
+        <div className="z-10">
+          <p className="text-center text-grey-fff font-bold mb-2.5">
             Scénario du projet {proj.numProjet}
           </p>
-          <p className="text-justify text-0.9rem p-10px  border-1px rounded-1.5rem mb-2.5">
+          <p className="text-justify  p-10px border-2px border-grey-fff rounded-1.5rem mb-2.5">
             {proj.scenario}
           </p>
           <div className="">

@@ -648,6 +648,10 @@ video {
   height: 300px;
 }
 
+.h-800px {
+  height: 800px;
+}
+
 .w-100px {
   width: 100px;
 }
@@ -755,6 +759,10 @@ video {
   background-color: rgb(200 204 69 / var(--tw-bg-opacity));
 }
 
+.bg-formation {
+  background-image: url('/Formation_JS.jpg');
+}
+
 .bg-home {
   background-image: url('/home_office.jpg');
 }
@@ -767,8 +775,8 @@ video {
   background-image: url('/Present_Raisins.jpg');
 }
 
-.bg-formation {
-  background-image: url('/Formation_JS.jpg');
+.bg-projet {
+  background-image: url('/Projet_OpenClassrooms.png');
 }
 
 .bg-cover {

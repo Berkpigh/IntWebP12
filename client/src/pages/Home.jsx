@@ -69,22 +69,22 @@ const Home = () => {
           </p>
         </div>
         <div className="flex flex-col">
-          <div className="font-bold opacity-90 bg-grey m-auto w-90px mt-1.5 border-1px p-5px rounded-1.5rem">
+          <div className="text-1.1rem opacity-90 bg-grey m-auto w-90px mt-1.5 border-1px p-5px rounded-1.5rem">
             <Link to="/passe" className="">
               Passé
             </Link>
           </div>
-          <div className="font-bold opacity-90 bg-grey m-auto w-100px mt-1.5 border-1px p-5px rounded-1.5rem">
+          <div className="text-1.1rem opacity-90 bg-grey m-auto w-100px mt-1.5 border-1px p-5px rounded-1.5rem">
             <Link to="/present" className="">
               Présent
             </Link>
           </div>
-          <div className="font-bold opacity-90 bg-grey mt-1.5 border-1px p-5px rounded-1.5rem">
+          <div className="text-1.1rem opacity-90 bg-grey mt-1.5 border-1px p-5px rounded-1.5rem">
             <Link to="/avenir" className="">
               Avenir
             </Link>
           </div>
-          <p className="text-grey-fff my-5 italic font-bold bg-dark mt-1.5 border-1px p-5px rounded-1.5rem">
+          <p className="text-0.9rem text-grey-fff my-5 italic bg-dark mt-1.5 border-1px p-5px rounded-1.5rem">
             Les poportions sont intentionnellement inversées
           </p>
         </div>

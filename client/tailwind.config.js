@@ -69,6 +69,8 @@ export default {
       '300px': '300px',
       '400px': '400px',
       '30ph': '30vh',
+      '600px': '600px',
+      '800px': '800px',
       '915px': '915px',
       '100ph': '100vh',
     },
@@ -147,6 +149,7 @@ export default {
         passe: "url('/passé_cartePerforée4.jpg')",
         present: "url('/Present_Raisins.jpg')",
         formation: "url('/Formation_JS.jpg')",
+        projet: "url('/Projet_OpenClassrooms.png')",
       },
       /*
     gridAutoColumns: {
