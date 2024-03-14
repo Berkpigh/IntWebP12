@@ -5,11 +5,13 @@ import FetchGetProjets from '../api/FetchGetProjets'
 import photobibi from '/WIN_20240307_16_16_30_Pro.jpg'
 import { getepoqueStart, getepoqueSuccess } from '../redux/epoque/epoqueSlice'
 import { getprojetStart, getprojetSuccess } from '../redux/projet/projetSlice'
+import { useEffect } from 'react'
 
 const Home = () => {
   const { eloaded } = useSelector((state) => state.epoque)
   const { ploaded } = useSelector((state) => state.projet)
   const dispatch = useDispatch()
+
   //  console.log('loaded : ', { eloaded })
   const loadEpoques = async () => {
     dispatch(getepoqueStart())
@@ -18,16 +20,20 @@ const Home = () => {
     dispatch(getepoqueSuccess(edata))
   }
   const eloa = { eloaded }.eloaded
-  !eloa ? loadEpoques() : ''
 
   const loadProjets = async () => {
     dispatch(getprojetStart())
-    const pdata = await FetchGetEpoques('projets')
+    const pdata = await FetchGetProjets('projets')
     //console.log('data : ', pdata)
     dispatch(getprojetSuccess(pdata))
   }
   const ploa = { ploaded }.ploaded
   !ploa ? loadProjets() : ''
+
+  useEffect(() => {
+    !eloa ? loadEpoques() : ''
+    !ploa ? loadProjets() : ''
+  }, [])
 
   return (
     <div className="">

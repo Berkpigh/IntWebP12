@@ -1,7 +1,7 @@
 import propTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-const Projet = ({ numProjet, nom }) => {
+const Unprojet = ({ numProjet, nom }) => {
   const np = { numProjet }.numProjet
   const lien = `/projet/${np}`
   return (
@@ -15,8 +15,8 @@ const Projet = ({ numProjet, nom }) => {
     </div>
   )
 }
-Projet.propTypes = {
+Unprojet.propTypes = {
   numProjet: propTypes.number,
   nom: propTypes.string,
 }
-export default Projet
+export default Unprojet
