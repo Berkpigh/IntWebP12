@@ -103,6 +103,7 @@ export default {
       fff: '#fff',
       zero: '#000',
       grey: '#D1D5DB',
+      rgrey: '#70626d',
     },
     padding: {
       r5px: '5px',
@@ -150,6 +151,7 @@ export default {
         present: "url('/Present_Raisins.jpg')",
         formation: "url('/Formation_JS.jpg')",
         projet: "url('/Projet_OpenClassrooms.png')",
+        avenir: "url('/Avenir_2bouteilles.jpg')",
       },
       /*
     gridAutoColumns: {

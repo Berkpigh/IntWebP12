@@ -759,6 +759,15 @@ video {
   background-color: rgb(200 204 69 / var(--tw-bg-opacity));
 }
 
+.bg-rgrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 98 109 / var(--tw-bg-opacity));
+}
+
+.bg-avenir {
+  background-image: url('/Avenir_2bouteilles.jpg');
+}
+
 .bg-formation {
   background-image: url('/Formation_JS.jpg');
 }
@@ -799,6 +808,10 @@ video {
 
 .p-10px {
   padding: 10px;
+}
+
+.p-24px {
+  padding: 24px;
 }
 
 .p-5px {
@@ -876,8 +889,16 @@ video {
   opacity: 0.5;
 }
 
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .opacity-70 {
   opacity: 0.7;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .opacity-90 {
