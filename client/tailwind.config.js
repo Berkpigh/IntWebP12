@@ -30,6 +30,9 @@ export default {
       green: {
         154: '#04300a',
       },
+      red: {
+        fonce: '#b00b31',
+      },
     },
     top: {
       '50px': '50px',

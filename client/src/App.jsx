@@ -7,6 +7,7 @@ import Projet from './pages/Projet'
 import Avenir from './pages/Avenir'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Error from './components/Error'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/formation" element={<Formation />} />
         <Route path="/projet/:id" element={<Projet />} />
         <Route path="/avenir" element={<Avenir />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
