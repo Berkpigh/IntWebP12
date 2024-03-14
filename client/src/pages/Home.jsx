@@ -6,7 +6,6 @@ import photobibi from '/WIN_20240307_16_16_30_Pro.jpg'
 import { getepoqueStart, getepoqueSuccess } from '../redux/epoque/epoqueSlice'
 import { getprojetStart, getprojetSuccess } from '../redux/projet/projetSlice'
 import { useEffect } from 'react'
-import bgimage from '/home_office.jpg'
 
 const Home = () => {
   const { eloaded } = useSelector((state) => state.epoque)

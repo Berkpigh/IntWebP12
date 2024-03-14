@@ -27,6 +27,9 @@ export default {
         222: '#222',
         fff: '#ffffff',
       },
+      green: {
+        154: '#2c5938',
+      },
     },
     top: {
       '50px': '50px',
@@ -91,6 +94,7 @@ export default {
     },
     backgroundColor: {
       yellow: '#c8cc45',
+      lgreen: '#b9edc7',
       dark: '#12002b',
       submit: '#00bc77',
       fff: '#fff',
@@ -139,11 +143,14 @@ export default {
     extend: {
       backgroundImage: {
         home: "url('/home_office.jpg')",
+        passe: "url('/passé_cartePerforée4.jpg')",
       },
-      /*       gridAutoColumns: {
-        '1tierfr': 'minmax(0.3fr, 0.3fr)',
-        '2tierfr': 'minmax(0.7fr, 0.7fr)',
-      }, */
+      /*
+    gridAutoColumns: {
+      '1tierfr': 'minmax(0.3fr, 0.3fr)',
+      '2tierfr': 'minmax(0.7fr, 0.7fr)',
+    }, 
+*/
     },
   },
   plugins: [],

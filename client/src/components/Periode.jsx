@@ -1,14 +1,7 @@
 import { useState } from 'react'
 import propTypes from 'prop-types'
 
-function Periode({
-  titre,
-  caracteristique,
-  vecu,
-  numImage,
-  image,
-  descriptionImage,
-}) {
+function Periode({ titre, caracteristique, vecu, image, descriptionImage }) {
   const [detailVisible, setDetailVisible] = useState(false)
   const [detailClicked, setDetailClicked] = useState(false)
   const ima = { image }.image
@@ -26,7 +19,9 @@ function Periode({
   return (
     <div>
       <div className="flex justify-between items-center border-1px rounded-1.5rem p-5px mb-1.5">
-        <p className="text-left">{titre}</p>
+        <p className="bg-lgreen text-green-154 text-1.1rem text-left rounded-1.5rem p-5px">
+          {titre}
+        </p>
         {detailVisible ? (
           <div className="rotate-180 pr-5px">
             <svg
@@ -83,21 +78,21 @@ function Periode({
           </div>
         ) : (
           <div className="flex justify-between">
-            <div className="">
+            <div className="mr-1.5">
               <div
                 className="w-150px h-250px flex flex-col justify-around"
                 onClick={handleClickDetail}
               >
-                <div className="p-5px h-100px">
+                <div className="bg-fff p-5px h-100px rounded-1.5rem">
                   <img
                     // className="absolute left-0 top-0 hover:left-20pxhover:scale-x-125  hover:left-20px object-contain"
-                    className="object-contain"
+                    className="object-contain m-auto"
                     src={ima}
                     alt="pas image"
                   />
                 </div>
                 <div>
-                  <p className="text-left text-0.9rem p-5px">
+                  <p className="bg-dark text-grey-fff text-left text-0.9rem p-5px rounded-1.5rem">
                     {descriptionImage}
                   </p>
                 </div>
@@ -105,8 +100,12 @@ function Periode({
             </div>
             <div className="flex flex-col">
               <div className="">
-                <p className="p-5px text-justify">{caracteristique}</p>
-                <p className="p-5px text-justify">{vecu}</p>
+                <p className="p-5px text-justify text-1.1rem italic bg-dark text-grey-fff rounded-1.5rem mb-1.5">
+                  {caracteristique}
+                </p>
+                <p className="p-5px text-justify bg-dark text-grey-fff rounded-1.5rem">
+                  {vecu}
+                </p>
               </div>
             </div>
           </div>
