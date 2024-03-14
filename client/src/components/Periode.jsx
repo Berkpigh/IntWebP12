@@ -18,8 +18,8 @@ function Periode({ titre, caracteristique, vecu, image, descriptionImage }) {
   }
   return (
     <div>
-      <div className="flex justify-between items-center border-1px rounded-1.5rem p-5px mb-1.5">
-        <p className="bg-lgreen text-green-154 text-1.1rem text-left rounded-1.5rem p-5px">
+      <div className="z-10 flex justify-between items-center border-1px rounded-1.5rem p-5px mb-1.5">
+        <p className="opacity-100 text-grey-fff bg-zero text-1.1rem text-left rounded-1.5rem p-5px">
           {titre}
         </p>
         {detailVisible ? (

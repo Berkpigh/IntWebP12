@@ -28,7 +28,7 @@ export default {
         fff: '#ffffff',
       },
       green: {
-        154: '#2c5938',
+        154: '#04300a',
       },
     },
     top: {
@@ -100,6 +100,7 @@ export default {
       lgreen: '#b9edc7',
       dark: '#12002b',
       submit: '#00bc77',
+      darkgreen: '#04300a',
       fff: '#fff',
       zero: '#000',
       grey: '#D1D5DB',
