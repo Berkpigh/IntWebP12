@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 
 const Present = () => {
   return (
-    <div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 ">
-        <p className="text-center">
-          J&apos;hérite d&apos;une vigne.
+    <div className="z-0 opacity-50 bg-present object-cover bg-cover bg-no-repeat">
+      <div className="z-10 p-5px  bg-dark opacity-70 border-2px border-grey-fff rounded-1.5rem mb-1.5">
+        <p className="text-center text-grey-fff">
+          J&apos;hérite d&apos;une <strong>vigne</strong>.
           <br />
           On se met à la cultiver avec des amis.
           <br />
@@ -20,33 +20,38 @@ const Present = () => {
           Je choisis le modèle MVC en c#, .Net Core 6, EF 6 et SQLServer.
         </p>
       </div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 w-200px m-auto">
-        <p className="text-center">Le résultat c&apos;est çela :</p>
+      <div className="z-10 p-5px bg-dark opacity-70 border-2px border-grey-fff rounded-1.5rem mb-1.5 w-200px m-auto">
+        <p className="text-center text-grey-fff">
+          Le résultat c&apos;est çela :
+        </p>
       </div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 w-300px m-auto">
-        <a className="text-center" href="https://www.clopico.shop/Accueil">
+      <div className="p-5px bg-fff border-1px rounded-1.5rem mb-1.5 w-300px m-auto">
+        <a
+          className="text-center text-1.1rem"
+          href="https://www.clopico.shop/Accueil"
+        >
           https://www.clopico.shop/Accueil
         </a>
       </div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 w-300px m-auto">
-        <p className="text-center">
+      <div className="z-10 p-5px bg-dark opacity-70 border-2px border-grey-fff rounded-1.5rem mb-1.5 w-300px m-auto">
+        <p className="text-center text-grey-fff">
           Mais il y a encore bien des progrès à faire ! Je vous invite à le voir
           en ouvrant la page d&apos;
         </p>
       </div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 w-300px m-auto">
-        <Link to="/avenir" className="text-center">
+      <div className="z-10 p-5px bg-dark opacity-70 border-2px border-grey-fff rounded-1.5rem mb-1.5 w-300px m-auto">
+        <Link to="/avenir" className="text-center text-1.2rem text-grey-fff">
           Avenir
         </Link>
       </div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 w-300px m-auto">
-        <p className="text-center">
-          Et voilà ce qui m&apos;a conduit à entamer une formation d'Intégrateur
-          Web chez OpenClassRooms
+      <div className="z-10 p-5px bg-dark opacity-70 border-2px border-grey-fff rounded-1.5rem mb-1.5 w-300px m-auto">
+        <p className="text-center text-grey-fff">
+          Et voilà ce qui m&apos;a conduit à entamer une formation
+          d&apos;Intégrateur Web chez OpenClassRooms
         </p>
       </div>
-      <div className="p-5px border-1px rounded-1.5rem mb-1.5 w-300px m-auto">
-        <Link to="/formation" className="text-center">
+      <div className="z-10 p-5px bg-dark opacity-70 border-2px border-grey-fff rounded-1.5rem mb-1.5 w-300px m-auto">
+        <Link to="/formation" className="text-center text-1.2rem text-grey-fff">
           Formation OpenClassrooms
         </Link>
       </div>

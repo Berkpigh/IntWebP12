@@ -7,7 +7,7 @@ const Formation = () => {
   const cp = { currentProjet }.currentProjet
 
   return (
-    <div>
+    <div className="z-0 opacity-50 bg-formation object-cover bg-cover bg-no-repeat">
       <Link to="/present">
         <div className="grid grid-cols-2 gap-0.75rem">
           {cp

@@ -92,7 +92,7 @@ function Periode({ titre, caracteristique, vecu, image, descriptionImage }) {
                   />
                 </div>
                 <div>
-                  <p className="bg-dark text-grey-fff text-left text-0.9rem p-5px rounded-1.5rem">
+                  <p className="p-10px bg-dark text-grey-fff text-left text-0.9rem rounded-1.5rem">
                     {descriptionImage}
                   </p>
                 </div>
@@ -100,10 +100,10 @@ function Periode({ titre, caracteristique, vecu, image, descriptionImage }) {
             </div>
             <div className="flex flex-col">
               <div className="">
-                <p className="p-5px text-justify text-1.1rem italic bg-dark text-grey-fff rounded-1.5rem mb-1.5">
+                <p className="p-10px text-justify text-1.1rem italic bg-dark text-grey-fff rounded-1.5rem mb-1.5">
                   {caracteristique}
                 </p>
-                <p className="p-5px text-justify bg-dark text-grey-fff rounded-1.5rem">
+                <p className="p-10px text-justify bg-dark text-grey-fff rounded-1.5rem">
                   {vecu}
                 </p>
               </div>

@@ -6,7 +6,7 @@ const Passe = () => {
   const ce = { currentEpoque }.currentEpoque
 
   return (
-    <div className="z-0 opacity-60 bg-passe object-cover bg-cover bg-no-repeat">
+    <div className="z-0 opacity-30 bg-passe object-cover bg-cover bg-no-repeat">
       <div className="z-10 flex flex-col my-2.5">
         {ce
           .sort((p1, p2) => p1.numImage - p2.numImage)

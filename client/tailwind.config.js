@@ -89,6 +89,7 @@ export default {
       },
       grey: {
         ccc: '#ccc',
+        fff: '#fff',
       },
       zero: '#000',
     },
@@ -144,6 +145,8 @@ export default {
       backgroundImage: {
         home: "url('/home_office.jpg')",
         passe: "url('/passé_cartePerforée4.jpg')",
+        present: "url('/Present_Raisins.jpg')",
+        formation: "url('/Formation_JS.jpg')",
       },
       /*
     gridAutoColumns: {
