@@ -25,7 +25,7 @@ export default {
       grey: {
         DEFAULT: '#2c3e50',
         222: '#222',
-        fff: '#fff',
+        fff: '#ffffff',
       },
     },
     top: {
@@ -90,6 +90,7 @@ export default {
       zero: '#000',
     },
     backgroundColor: {
+      yellow: '#c8cc45',
       dark: '#12002b',
       submit: '#00bc77',
       fff: '#fff',
@@ -137,7 +138,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        hero: "url('./src/assets/img/bank-tree.jpeg')",
+        home: "url('/home_office.jpg')",
       },
       /*       gridAutoColumns: {
         '1tierfr': 'minmax(0.3fr, 0.3fr)',

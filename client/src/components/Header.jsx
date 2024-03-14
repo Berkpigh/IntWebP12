@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className="p-5px flex justify-between">
+    <div className="bg-yellow p-5px flex justify-between">
       <Link to="/" className="pr-5px">
         <svg
           xmlns="http://www.w3.org/2000/svg"
