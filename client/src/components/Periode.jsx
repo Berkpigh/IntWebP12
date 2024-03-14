@@ -62,7 +62,7 @@ function Periode({ titre, caracteristique, vecu, image, descriptionImage }) {
             className="w-412px h-250px flex flex-col justify-around items-center"
             onClick={handleClickDetail}
           >
-            <div className="p-5px">
+            <div className="bg-fff p-5px">
               <img
                 // className="absolute left-0 top-0 hover:left-20pxhover:scale-x-125  hover:left-20px object-contain"
                 className="object-contain w-250px h-200px"
@@ -71,7 +71,7 @@ function Periode({ titre, caracteristique, vecu, image, descriptionImage }) {
               />
             </div>
             <div>
-              <p className="text-center text-1.1rem p-5px">
+              <p className="text-center text-0.9rem p-5px bg-dark text-grey-fff rounded-1.5rem">
                 {descriptionImage}
               </p>
             </div>
