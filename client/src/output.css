@@ -560,6 +560,11 @@ video {
   margin: auto;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -659,6 +664,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -704,6 +713,10 @@ video {
   padding: 5px;
 }
 
+.p-r5px {
+  padding: 5px;
+}
+
 .pr-5px {
   padding-right: 5px;
 }
@@ -730,6 +743,10 @@ video {
 
 .text-1\.1rem {
   font-size: 1.1rem;
+}
+
+.text-1\.2rem {
+  font-size: 1.2rem;
 }
 
 .text-1\.5rem {
