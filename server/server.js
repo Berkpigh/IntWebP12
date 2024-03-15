@@ -5,10 +5,20 @@ const cors = require('cors')
 //const yaml = require('yamljs')
 //const swaggerDocs = yaml.load('./swagger.yaml')
 const dbConnection = require('./database/connection')
+const path = require('path')
 
 dotEnv.config()
 
+const __dirname = path.resolve()
+
 const app = express()
+
+app.use(express.static(path.join(__dirname, '/client/dist')))
+
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
+})
+
 const PORT = process.env.PORT || 3001
 
 // Connect to the database
