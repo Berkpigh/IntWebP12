@@ -9,7 +9,7 @@ const path = require('path')
 
 dotEnv.config()
 
-const __dirname = path.resolve()
+__dirname = path.resolve()
 
 const app = express()
 
