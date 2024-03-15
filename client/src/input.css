@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
+/*body {
   width: 412px;
   height: 897px;
+  margin: auto;
+}*/
+body {
   margin: auto;
 }

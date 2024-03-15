@@ -59,6 +59,8 @@ export default {
       '320px': '320px',
       '364px': '364px',
       '412px': '412px',
+      '720px': '720px',
+      '920px': '920px',
       '100pw': '100vw',
     },
     height: {

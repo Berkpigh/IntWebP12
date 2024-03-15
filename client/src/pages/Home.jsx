@@ -36,9 +36,9 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="z-0 bg-home object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
       <div className="z-10">
-        <div className="opacity-90 object-contain h-300px rounded-1.5rem">
+        <div className="opacity-90 object-cover h-300px rounded-1.5rem">
           <img
             className="object-contain  rounded-1.5rem"
             src={photobibi}
