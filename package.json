@@ -22,7 +22,7 @@
   "scripts": {
     "dev:server": "nodemon ./server/server.js",
     "populate-db": "node ./server/scripts/populateDatabase.js",
-    "start": "node server/server.js",
+    "start": "node ./server/server.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "devDependencies": {
