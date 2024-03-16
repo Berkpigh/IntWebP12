@@ -12,13 +12,18 @@ dotEnv.config()
 __dirname = path.resolve()
 
 const app = express()
-/* 
-app.use(express.static(path.join(__dirname, '/client/dist')))
 
-app.get('*', (req,res) => {
-  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
-})
- */
+const envir = app. get('env')
+console.log('envir : ', envir)
+
+if (envir !== 'development') {
+  app.use(express.static(path.join(__dirname, '/client/dist')))
+
+  app.get('*', (req,res) => {
+    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
+  })
+}
+
 const PORT = process.env.PORT || 3001
 
 // Connect to the database
