@@ -1,17 +1,24 @@
 import propTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Unprojet = ({ numProjet, nom }) => {
+  const navigate = useNavigate()
   const np = { numProjet }.numProjet
   const lien = `/projet/${np}`
+  const handleNavigation = () => {
+    navigate(lien)
+  }
   return (
     <div className="">
-      <Link to={lien}>
-        <div className="p-10px h-125px border-1px rounded-1.5rem m-auto mb-2.5">
+      <div>
+        <div
+          className="p-10px h-125px border-1px rounded-1.5rem m-auto mb-2.5"
+          onClick={handleNavigation}
+        >
           <p className="text-center font-bold">Projet {numProjet}</p>
           <p className="text-center">{nom}</p>
         </div>
-      </Link>
+      </div>
     </div>
   )
 }

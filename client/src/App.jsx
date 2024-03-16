@@ -8,8 +8,19 @@ import Avenir from './pages/Avenir'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
+import { useDispatch } from 'react-redux'
+import { getepoqueInitial } from './redux/epoque/epoqueSlice'
+import { getprojetInitial } from './redux/projet/projetSlice'
 
 export default function App() {
+  const remove = () => {
+    localStorage.removeItem('epoque')
+    localStorage.removeItem('projet')
+  }
+  remove()
+  const dispatch = useDispatch()
+  dispatch(getepoqueInitial())
+  dispatch(getprojetInitial())
   return (
     <BrowserRouter>
       <Header />

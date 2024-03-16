@@ -10,8 +10,7 @@ const projetSlice = createSlice({
   name: 'projet',
   initialState,
   reducers: {
-    getprojetInitial: (state, action) => {
-      state.currentProjet = action.payload
+    getprojetInitial: (state) => {
       state.ploaded = false
       state.error = false
     },

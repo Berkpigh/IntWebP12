@@ -12,13 +12,13 @@ dotEnv.config()
 __dirname = path.resolve()
 
 const app = express()
-
+/* 
 app.use(express.static(path.join(__dirname, '/client/dist')))
 
 app.get('*', (req,res) => {
   res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
 })
-
+ */
 const PORT = process.env.PORT || 3001
 
 // Connect to the database
@@ -47,13 +47,3 @@ app.listen(PORT, () => {
 // Handle custom routes
 app.use('/api/v1', require('./routes/epoqueRoutes'))
 app.use('/api/v1', require('./routes/projetRoutes'))
-
-app.use((err, req, res, next) => {
-  const statusCode = err.statusCode || 500;
-  const message = err.message || 'Internal Server Error';
-  return res.status(statusCode).json({
-    success: false,
-    message,
-    statusCode,
-  });
-})

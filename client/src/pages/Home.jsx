@@ -10,13 +10,14 @@ import { useEffect } from 'react'
 const Home = () => {
   const { eloaded } = useSelector((state) => state.epoque)
   const { ploaded } = useSelector((state) => state.projet)
+  console.log('eloaded : ', eloaded, 'ploaded : ', ploaded)
   const dispatch = useDispatch()
 
   //  console.log('loaded : ', { eloaded })
   const loadEpoques = async () => {
     dispatch(getepoqueStart())
     const edata = await FetchGetEpoques('epoques')
-    //console.log('data : ', data)
+    //console.log('edata : ', edata)
     dispatch(getepoqueSuccess(edata))
   }
   const eloa = { eloaded }.eloaded
