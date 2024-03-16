@@ -3,9 +3,10 @@ import Unprojet from '../components/Unprojet'
 
 const Formation = () => {
   const { currentProjet } = useSelector((state) => state.projet)
+  const pr = { currentProjet }.currentProjet
   let newPr = []
-  for (let i = 0; i < { currentProjet }.currentProjet.length; i++) {
-    newPr[i] = { currentProjet }.currentProjet[i]
+  for (let i = 0; i < pr.length; i++) {
+    newPr[i] = pr[i]
   }
   return (
     <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-formation object-cover bg-cover bg-no-repeat">
