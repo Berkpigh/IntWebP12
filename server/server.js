@@ -31,19 +31,29 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// Handle custom routes
-app.use('/api/v1', require('./routes/epoqueRoutes'))
-app.use('/api/v1', require('./routes/projetRoutes'))
-
 // API Documentation
 //if (process.env.NODE_ENV !== 'production') {
 //  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 //}
 
-app.get('/', (req, res, next) => {
-  res.send('Hello from my Express server v2!')
-})
+//app.get('/', (req, res, next) => {
+//  res.send('Hello from my Express server v2!')
+//})
 
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
+})
+
+// Handle custom routes
+app.use('/api/v1', require('./routes/epoqueRoutes'))
+app.use('/api/v1', require('./routes/projetRoutes'))
+
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || 'Internal Server Error';
+  return res.status(statusCode).json({
+    success: false,
+    message,
+    statusCode,
+  });
 })
