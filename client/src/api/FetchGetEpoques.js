@@ -10,7 +10,8 @@ const FetchGetEpoques = async (url) => {
     })
     const resdata = await res.json()
     console.log('resdata : ', resdata)
-    return resdata.body
+    return resdata
+    //return resdata.body
   } catch {
     console.log('getepoques')
   }
