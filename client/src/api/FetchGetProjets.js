@@ -11,8 +11,11 @@ const FetchGetProjets = async (url) => {
     const resdata = await res.json()
     //console.log('resdata.body', resdata.body)
     return resdata.body
-  } catch (error) {
-    console.log('error', error)
+  } catch {
+    console.log('getprojets')
   }
+  /*   } catch (error) {
+    console.log('error', error)
+  } */
 }
 export default FetchGetProjets
