@@ -10,7 +10,7 @@ import { getprojetStart, getprojetSuccess } from '../redux/projet/projetSlice'
 const Home = () => {
   const { eloaded } = useSelector((state) => state.epoque)
   const { ploaded } = useSelector((state) => state.projet)
-  console.log('eloaded : ', eloaded, 'ploaded : ', ploaded)
+  //console.log('eloaded : ', eloaded, 'ploaded : ', ploaded)
   const dispatch = useDispatch()
 
   const loadEpoques = async () => {
