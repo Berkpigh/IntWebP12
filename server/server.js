@@ -24,7 +24,7 @@ if (envir !== 'development') {
   })
 }
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 10000
 
 // Connect to the database
 dbConnection()
