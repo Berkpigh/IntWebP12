@@ -25,7 +25,7 @@ const Home = () => {
   const loadProjets = async () => {
     dispatch(getprojetStart())
     const pdata = await FetchGetProjets('projets')
-    //console.log('data : ', pdata)
+    //console.log('pdata : ', pdata)
     dispatch(getprojetSuccess(pdata))
   }
   const ploa = { ploaded }.ploaded
