@@ -5,7 +5,7 @@ import FetchGetProjets from '../api/FetchGetProjets'
 import photobibi from '/WIN_20240307_16_16_30_Pro.jpg'
 import { getepoqueStart, getepoqueSuccess } from '../redux/epoque/epoqueSlice'
 import { getprojetStart, getprojetSuccess } from '../redux/projet/projetSlice'
-import { useEffect } from 'react'
+//import { useEffect } from 'react'
 
 const Home = () => {
   const { eloaded } = useSelector((state) => state.epoque)
@@ -13,7 +13,6 @@ const Home = () => {
   console.log('eloaded : ', eloaded, 'ploaded : ', ploaded)
   const dispatch = useDispatch()
 
-  //  console.log('loaded : ', { eloaded })
   const loadEpoques = async () => {
     dispatch(getepoqueStart())
     const edata = await FetchGetEpoques('epoques')
@@ -29,12 +28,9 @@ const Home = () => {
     dispatch(getprojetSuccess(pdata))
   }
   const ploa = { ploaded }.ploaded
-  !ploa ? loadProjets() : ''
 
-  useEffect(() => {
-    !eloa ? loadEpoques() : ''
-    !ploa ? loadProjets() : ''
-  }, [])
+  !eloa ? loadEpoques() : ''
+  !ploa ? loadProjets() : ''
 
   return (
     <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
@@ -95,3 +91,26 @@ const Home = () => {
 }
 
 export default Home
+/* 
+const loadEpoques = async () => {
+  dispatch(getepoqueStart())
+  const edata = await FetchGetEpoques('epoques')
+  //console.log('edata : ', edata)
+  dispatch(getepoqueSuccess(edata))
+}
+const eloa = { eloaded }.eloaded
+
+const loadProjets = async () => {
+  dispatch(getprojetStart())
+  const pdata = await FetchGetProjets('projets')
+  //console.log('pdata : ', pdata)
+  dispatch(getprojetSuccess(pdata))
+}
+const ploa = { ploaded }.ploaded
+!ploa ? loadProjets() : ''
+
+useEffect(() => {
+  !eloa ? loadEpoques() : ''
+  !ploa ? loadProjets() : ''
+}, [])
+ */
