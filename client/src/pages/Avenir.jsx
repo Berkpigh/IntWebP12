@@ -9,7 +9,7 @@ const Avenir = () => {
       </p>
       <div className="bg-dark opacity-60">
         <p className="text-justify text-grey-fff border-2px border-grey-fff p-10px rounded-1.5rem">
-          Pour passer commande, l&apos;utilisateur simplement choisit ses
+          Pour passer commande, l&apos;utilisateur choisit simplement ses
           produits, indique son adresse de livraison et le moyen de paiement
           (CC, facture). L&apos;administrateur doit pouvoir gérer les commandes
           en consignation.
