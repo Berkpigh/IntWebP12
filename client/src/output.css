@@ -926,6 +926,10 @@ body {
 }
 
 @media (min-width: 720px) {
+  .smpb\:h-550px {
+    height: 550px;
+  }
+
   .smpb\:w-720px {
     width: 720px;
   }
@@ -936,6 +940,14 @@ body {
 }
 
 @media (min-width: 920px) {
+  .mdpb\:h-700px {
+    height: 700px;
+  }
+
+  .mdpb\:h-1170px {
+    height: 1170px;
+  }
+
   .mdpb\:w-920px {
     width: 920px;
   }

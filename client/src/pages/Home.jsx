@@ -35,16 +35,16 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-412px smpb:w-720px smpb:h-1010px mdpb:h-1170px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
       <div className="z-10">
-        <div className="opacity-90 object-cover h-300px rounded-1.5rem">
+        <div className="opacity-90 object-cover h-300px smpb:h-550px mdpb:h-700px rounded-1.5rem">
           <img
             className="object-contain  rounded-1.5rem"
             src={photobibi}
             alt="Photo informaticien"
           />
         </div>
-        <p className="text-grey-fff bg-yellow w-300px text-red text-1.5rem p-5px my-2 m-auto rounded-1.5rem">
+        <p className="z-10 text-grey-fff bg-yellow w-300px text-red text-1.5rem p-5px my-2 m-auto rounded-1.5rem">
           Portefeuille d&apos;informaticien
         </p>
         <div className="opacity-90 bg-grey border-1px p-5px rounded-1.5rem">
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
         <div className="opacity-90 bg-grey mt-1.5 border-1px p-5px rounded-1.5rem">
           <p className="p-5px">
-            Ce n&apos;est de pas ma carrière elle-même dont je veux parler.
+            Ce n&apos;est pas de ma carrière elle-même dont je veux parler.
             <br />
             Les avancées technologiques rencontrées depuis 1970 peuvent en
             revanche présenter un intérêt
@@ -84,7 +84,7 @@ const Home = () => {
             </Link>
           </div>
           <p className="text-0.9rem text-grey-fff my-5 italic bg-dark mt-1.5 border-1px p-5px rounded-1.5rem">
-            Les poportions sont intentionnellement inversées
+            Les proportions sont intentionnellement inversées
           </p>
         </div>
       </div>

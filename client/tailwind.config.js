@@ -73,10 +73,13 @@ export default {
       '250px': '250px',
       '300px': '300px',
       '400px': '400px',
+      '550px': '550px',
       '30ph': '30vh',
       '600px': '600px',
+      '700px': '700px',
       '800px': '800px',
       '915px': '915px',
+      '1170px': '1170px',
       '100ph': '100vh',
     },
     borderWidth: {
