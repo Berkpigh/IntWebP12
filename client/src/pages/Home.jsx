@@ -34,6 +34,11 @@ const Home = () => {
     !ploa ? loadProjets() : ''
   }, [])
 
+  const handleDataReload = () => {
+    loadEpoques()
+    loadProjets()
+  }
+
   return (
     <div className="m-auto w-412px smpb:w-720px smpb:h-1010px mdpb:h-1170px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
       <div className="z-10">
@@ -83,9 +88,11 @@ const Home = () => {
               Avenir
             </Link>
           </div>
+          <div onClick={handleDataReload}>
           <p className="text-0.9rem text-grey-fff my-5 italic bg-dark mt-1.5 border-1px p-5px rounded-1.5rem">
             Les proportions sont intentionnellement inversées
           </p>
+          </div>
         </div>
       </div>
     </div>
