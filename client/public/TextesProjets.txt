@@ -1,0 +1,69 @@
+{
+	"numProjet": 2,
+	"nom": "Premiers pas sur le langage HTML",
+	"scenario": "Vous rejoignez l’agence Webonzaï pour un stage en tant que développeur junior. Romain, votre maître de stage et CTO, est en déplacement professionnel la semaine de votre arrivée. Pour vous permettre d’avancer sans lui, il vous confie par e-mail votre première mission : mettre à jour la page Internet de Riding Cities, une association sportive qui promeut le skate en région. Pièces jointes : Page et code existants du site Riding Cities Maquette du résultat attendu",
+	"resultat": "/2Projet2.PNG"
+}
+
+{
+	"numProjet": 3,
+	"nom": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+	"scenario": "Vous débutez votre alternance en tant que développeur web au sein de la start-up Booki. L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillez en étroite collaboration avec Sarah, la CTO, et Loïc, l’UI designer.",
+	"resultat": "/3Projet3.PNG"
+}
+
+{
+	"numProjet": 4,
+	"nom": "Améliorez l''interface d'un site mobile avec des animations CSS",
+	"scenario": "Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris. Votre mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !",
+	"resultat": "/4Projet4.PNG"
+}
+
+{
+	"numProjet": 5,
+	"nom": "Premiers pas sur le langage JavaScript",
+	"scenario": "Vous débutez comme développeur front-end en freelance, et venez de décrocher une offre pour dynamiser le site Internet statique d’une petite imprimerie familiale nommée Print it. Etapes : 1) Mettre à jour le code HTML 2) Ajouter des Event Listeners sur les flèches 3) Ajouter des bullet points au slider 4) Modifier le slide au clic sur le bouton 5) Mettre en place le défilement infini sur le carrousel",
+	"resultat": "/5Projet5.PNG"
+}
+
+{
+	"numProjet": 6,
+	"nom": "Créez une page web dynamique avec JavaScript",
+	"scenario": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur. Vous devez donc développer 1) la page de présentation des travaux de l'architecte (à partir du HTML fourni) 2) la page de connexion de l'administrateur du site (le client) (code à créer de zéro) 3) la modale permettant d'uploader de nouveaux médias (code à créer from scratch).",
+	"resultat": "/6Projet6.PNG"
+}
+
+{
+	"numProjet": 7,
+	"nom": "Planifiez le développement du site de votre client",
+	"scenario": "Vous êtes développeur front-end au sein de l’agence Webgencia. Cette semaine, on vous confie une mission un peu différente de d’habitude. Il ne s’agit pas de développer un site mais de mener, préparer et planifier le projet de développement d’un site. En effet, Qwenta, un de vos clients, souhaite faire développer un “Menu Maker”. Il s’agit d’un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics. A faire : 1) développer un système de veille qui te donnera des idées pour ce projet, et qu’on pourra réutiliser dans l’équipe 2) en parallèle, déterminer les spécifications techniques du site Menu Maker by Qwenta.",
+	"resultat": "/7Projet7.PNG"
+}
+
+{
+	"numProjet": 8,
+	"nom": "Créez une application web de location immobilière avec React",
+	"scenario": "Vous êtes développeur front-end en freelance pour Kasa, une entreprise de location d’appartements entre particuliers. Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance. Un gros chantier pour cette année !",
+	"resultat": "/8Projet8.PNG"
+}
+
+{
+	"numProjet": 9,
+	"nom": "Optimisez le référencement d'un site de photographe",
+	"scenario": "Vous êtes développeur freelance et vous décidez de proposer vos services d’optimisation SEO à de nouveaux clients. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l’un de vos amis. Voici un extrait du mail que vous avez envoyé à Nina : Voici les prestations que je vous propose 1) Optimiser les images du site : des images trop lourdes rendent la page très longue à charger. 2) Optimiser le code et sa structure afin d’améliorer le chargement et l’accessibilité du site.",
+	"resultat": "/9Projet9.PNG"
+}
+
+{
+	"numProjet": 10,
+	"nom": "Débuggez le site d'une agence d'événementiel",
+	"scenario": "Vous êtes développeur front-end freelance, et l’agence évènementielle 724events vous contacte pour une mission. L’agence souhaite publier la nouvelle version de son site vitrine. Il s’agit d’un site one-page. Le design a été validé, et un premier développeur freelance a commencé l’intégration il y a quelques semaines. Malheureusement, ce freelance a dû abandonner le projet pour raisons personnelles. Le site est fonctionnel, mais quelques bugs entravent le bon usage par les visiteurs. 724events fait donc appel à vous pour finaliser le travail.",
+	"resultat": "/10Projet10.PNG"
+}
+
+{
+	"numProjet": 11,
+	"nom": "Implémentez le front-end d'une application bancaire avec React",
+	"scenario": "Vous venez d’intégrer Argent Bank comme développeur front-end. Argent Bank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire. Projet en 2 phases : 1)Authentification des utilisateurs. Connexion, déconnexion, misa à jour du profil 2) Transactions, spécifier pour chaque endpoint de l’API.",
+	"resultat": "/11Projet11.PNG"
+}
