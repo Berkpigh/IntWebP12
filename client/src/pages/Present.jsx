@@ -29,6 +29,7 @@ const Present = () => {
         <a
           className="text-center text-1.1rem"
           href="https://www.clopico.shop/Accueil"
+          target="_blank"
         >
           https://www.clopico.shop/Accueil
         </a>

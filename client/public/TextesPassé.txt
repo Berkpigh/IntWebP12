@@ -1,4 +1,5 @@
 {
+	"_id": "65eccf17611b84059ab81743",
 	"titre": "Fin des années 60, début des années 70",
 	"caracteristique": "L'âge du bit de mémoire visible, de la carte perforée …",
 	"vecu": "J'ai vécu cela en fin de secondaire dans un cours facultatif de FORTRAN. La machine avait appartenu au CERN et je l'ai vue !!!",
@@ -8,6 +9,7 @@
 }
 
 {
+	"_id": "65ecd2209419eb92daa6f1a2",
 	"titre": "Deuxième partie des années 70 A",
 	"caracteristique": "Le temps des typewriters et des écrans monochromes, de l'OS Time Sharing",
 	"vecu": "Il n'y a pas à dire, mais privilégiés étaient ceux qui pouvaient travailler avec des écrans sur un tel système!",
@@ -17,6 +19,7 @@
 }
 
 {
+	"_id": "65ef4c83540607bbd7762861",
 	"titre": "Deuxième partie des années 70 B",
 	"caracteristique": "Unix débarque. Ses origines sont plus anciennes mais il est réécrit en langage C.",
 	"vecu": "Beaucoup d'inovations émanent du M.I.T. Digital Equipment Corp.(DEC) n'est pas loin avec son siège au Massachusetts",
@@ -26,6 +29,7 @@
 }
 
 {
+	"_id": "65ef490d678d0d7e4d4c1cb8",
 	"titre": "Années 80 A",
 	"caracteristique": "Age d'or des mini-ordinateurs. Le VAX de DEC, processeur 32-bits, OS Virtual Memory System. Les Vax Cluster, technologie de protocole réseau avancée, annoncent internet!",
 	"vecu": "En 3 petites lignes de commande je compile, assemble et exécute mes programmes COBOL.",
@@ -35,6 +39,7 @@
 }
 
 {
+	"_id": "65ef4922678d0d7e4d4c1cbb",
 	"titre": "Années 80 B",
 	"caracteristique": "Le PC, microprocesseur Intel 8088, puis juste après, le MacIntosh, processeur Motorola 680x0, avec disques durs et CD remplaçant les disquette, s'imposent.",
 	"vecu": "J'ai la chance de pouvoir travailler avec un Système de Gestion de Base de Données Relationnel, sur Vax-1178x. Mieux que les fichiers séquentiels indexés.",
@@ -44,6 +49,7 @@
 }
 
 {
+	"_id": "65ef4934678d0d7e4d4c1cbe",
 	"titre": "Années 90 A",
 	"caracteristique": "Windows domine les OS pour PC.",
 	"vecu": "Au poste de travail, l'écran est peu à peu remplacé par des workstations à interface graphique, puis par des PC.",
@@ -53,6 +59,7 @@
 }
 
 {
+	"_id": "65ef4944678d0d7e4d4c1cc1",
 	"titre": "Années 90 B",
 	"caracteristique": "World Wide Web, protocole HTTP, langage HTML, premier navigateur (Nexus), développement des fournisseurs d'accès à internet",
 	"vecu": "J'utilise la programmation événementielle. Ayant plus d'accès à l'autoformation, je me familiarise avec la Programmation Orientée Objet",
@@ -62,6 +69,7 @@
 }
 
 {
+	"_id": "65ef4954678d0d7e4d4c1cc4",
 	"titre": "Années 90 C",
 	"caracteristique": "Sortie du noyau Linux 1.2, Langage Java, fondation de Google",
 	"vecu": "J'ai toujour à faire à d'énormes programmes batch en Cobol, mais je peux me faire des outils en VBA pour m'aider.",
@@ -71,6 +79,7 @@
 }
 
 {
+	"_id": "65ef4960678d0d7e4d4c1cc7",
 	"titre": "Dès 2000",
 	"caracteristique": "L'Open Source et l'accès gratuit au développement!",
 	"vecu": "Je programme en VBA Access. Reçoit une courte formation c# et ASP.NET dans le cadre du chômage",
