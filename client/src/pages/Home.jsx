@@ -88,11 +88,13 @@ const Home = () => {
               Avenir
             </Link>
           </div>
-          <div onClick={handleDataReload}>
-            <p className="text-0.9rem text-grey-fff my-5 italic bg-dark mt-1.5 border-1px p-5px rounded-1.5rem">
-              Les proportions sont intentionnellement inversées
-            </p>
-          </div>
+          <button
+            type="button"
+            onClick={handleDataReload}
+            className="text-0.9rem text-grey-fff my-5 italic bg-dark mt-1.5 border-1px p-5px rounded-1.5rem"
+          >
+            Les proportions sont intentionnellement inversées
+          </button>
         </div>
       </div>
     </div>
