@@ -9,7 +9,8 @@ const Formation = () => {
     newPr[i] = pr[i]
   }
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-formation object-cover bg-cover bg-no-repeat">
+    //<div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-formation object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-screen smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-formation object-cover bg-cover bg-no-repeat">
       <div className="grid grid-cols-2 smpb:grid-cols-3 mdpb:grid-cols-4 gap-0.75rem">
         {newPr
           .sort((p1, p2) => p1.numProjet - p2.numProjet)

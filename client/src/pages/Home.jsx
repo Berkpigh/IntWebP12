@@ -40,7 +40,8 @@ const Home = () => {
   }
 
   return (
-    <div className="m-auto w-412px smpb:w-720px smpb:h-1010px mdpb:h-1170px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
+    //<div className="m-auto w-412px smpb:w-720px smpb:h-1010px mdpb:h-1170px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-screen smpb:w-720px smpb:h-1010px mdpb:h-1170px mdpb:w-920px z-0 bg-home object-cover bg-cover bg-no-repeat">
       <div className="z-10">
         <div className="opacity-90 object-cover h-300px smpb:h-550px mdpb:h-700px rounded-1.5rem">
           <img

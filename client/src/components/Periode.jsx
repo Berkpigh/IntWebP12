@@ -17,7 +17,8 @@ function Periode({ titre, caracteristique, vecu, image, descriptionImage }) {
     setDetailClicked(!dc)
   }
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px ">
+    //<div className="m-auto w-412px smpb:w-720px mdpb:w-920px ">
+    <div className="m-auto w-screen smpb:w-720px mdpb:w-920px ">
       <div className="z-10 flex justify-between items-center border-1px rounded-1.5rem p-5px mb-1.5">
         <p className="opacity-100 text-grey-fff bg-zero text-1.1rem text-left rounded-1.5rem p-5px">
           {titre}

@@ -8,7 +8,8 @@ const Projet = () => {
   const proj = projects[pnum]
 
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 h-800px bg-projet object-cover bg-cover bg-no-repeat">
+    //<div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 h-800px bg-projet object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-screen smpb:w-720px mdpb:w-920px z-0 h-800px bg-projet object-cover bg-cover bg-no-repeat">
       <Link to="/formation">
         <div className="z-10">
           <p className="text-center text-grey-fff font-bold mb-2.5">

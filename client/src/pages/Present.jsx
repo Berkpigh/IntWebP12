@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 
 const Present = () => {
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-present object-cover bg-cover bg-no-repeat">
+    //<div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-present object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-screen smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-present object-cover bg-cover bg-no-repeat">
       <div className="z-10 p-5px  bg-dark opacity-70 border-2px border-grey-fff rounded-1.5rem mb-1.5">
         <p className="text-center text-grey-fff">
           J&apos;hérite d&apos;une <strong>vigne</strong>.

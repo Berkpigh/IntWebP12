@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px bg-yellow p-5px flex justify-between">
+    // <div className="m-auto w-412px smpb:w-720px mdpb:w-920px bg-yellow p-5px flex justify-between">
+    <div className="m-auto w-screen smpb:w-720px mdpb:w-920px bg-yellow p-5px flex justify-between">
       <Link to="/" className="pr-5px">
         <svg
           xmlns="http://www.w3.org/2000/svg"

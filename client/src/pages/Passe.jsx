@@ -11,7 +11,8 @@ const Passe = () => {
   let ceSorted = newCe.sort((p1, p2) => p1.numImage - p2.numImage)
   console.log('ceSorted : ', ceSorted)
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-passe object-cover bg-cover bg-no-repeat">
+    //<div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-passe object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-screen smpb:w-720px mdpb:w-920px z-0 opacity-50 bg-passe object-cover bg-cover bg-no-repeat">
       <div className="z-10 flex flex-col my-2.5">
         {ceSorted.map(
           ({

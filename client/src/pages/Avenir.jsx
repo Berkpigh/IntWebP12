@@ -1,6 +1,7 @@
 const Avenir = () => {
   return (
-    <div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 h-800px opacity-80 bg-avenir object-cover bg-cover bg-no-repeat">
+    //<div className="m-auto w-412px smpb:w-720px mdpb:w-920px z-0 h-800px opacity-80 bg-avenir object-cover bg-cover bg-no-repeat">
+    <div className="m-auto w-screen smpb:w-720px mdpb:w-920px z-0 h-800px opacity-80 bg-avenir object-cover bg-cover bg-no-repeat">
       <p className="bg-rgrey p-24px text-1.1rem text-grey-fff">
         Je dois maintenant mettre en oeuvre les connaissances aquises pour des
       </p>
